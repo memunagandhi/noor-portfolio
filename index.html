@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOOR MODESTE | Ethereal Modest Fashion Portfolio</title>
+    <meta name="description" content="Portfolio of Noor, a modest fashion designer blending traditional elegance with modern aesthetic standards.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/noor.css">
+    <script src="js/noor.js" defer></script>
+</head>
+<body class="antialiased">
+
+    <!-- Ethereal Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-10 py-8 flex justify-between items-center noor-glass">
+        <a href="index.html" class="text-2xl font-bold tracking-widest text-noor-text uppercase italic">Noor.</a>
+        <div class="hidden md:flex space-x-12 text-[10px] uppercase font-bold tracking-[0.3em] text-noor-text">
+            <a href="collections.html" class="hover:text-noor-gold transition-colors">Archives</a>
+            <a href="about.html" class="hover:text-noor-gold transition-colors">The Vision</a>
+            <a href="contact.html" class="hover:text-noor-gold transition-colors">Connect</a>
+        </div>
+        <button class="md:hidden text-noor-text">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center pt-32 pb-20 relative overflow-hidden px-10">
+        <!-- Organic Background Shapes -->
+        <div class="absolute top-20 right-0 w-[500px] h-[500px] bg-noor-accent/30 rounded-full blur-3xl parallax-shape" data-speed="0.2"></div>
+        <div class="absolute bottom-20 left-0 w-[300px] h-[300px] bg-noor-gold/10 rounded-full blur-3xl parallax-shape" data-speed="-0.1"></div>
+
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
+            <div class="noor-reveal">
+                <span class="text-noor-gold text-xs uppercase font-bold tracking-[0.4em] mb-6 block">Ethereal Modesty</span>
+                <h1 class="text-7xl md:text-9xl font-normal leading-[0.9] text-noor-text mb-10 italic">GRACE <br> IN <span class="font-bold">SILHOUETTE.</span></h1>
+                <p class="text-noor-text/60 text-lg max-w-md font-light leading-relaxed mb-12">
+                    A dialogue between tradition and modern grace. Noor Modeste explores the quiet power of modest fashion through sun-drenched textures and organic lines.
+                </p>
+                <div class="flex items-center space-x-10">
+                    <a href="collections.html" class="btn-noor">The Collection</a>
+                    <a href="about.html" class="text-xs uppercase font-bold tracking-widest text-noor-text border-b border-noor-text pb-1 hover:text-noor-gold hover:border-noor-gold transition-all">Discover</a>
+                </div>
+            </div>
+
+            <div class="relative noor-reveal" style="transition-delay: 200ms;">
+                <div class="shape-mask w-full aspect-[4/5] bg-noor-sand">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Modest Editorial" class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Detail Card -->
+                <div class="absolute -bottom-10 -left-10 p-8 noor-glass rounded-[30px] max-w-[200px] text-center shadow-2xl">
+                    <span class="text-[10px] uppercase tracking-widest text-noor-gold block mb-2">Philosophy</span>
+                    <p class="text-xs font-bold text-noor-text italic">"Beauty lies in the unseen details."</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Marquee Text -->
+    <section class="py-10 border-y border-noor-accent overflow-hidden whitespace-nowrap">
+        <div class="inline-block animate-marquee text-noor-accent">
+            <span class="text-[8vw] font-normal italic tracking-tighter uppercase mr-20">NOOR MODESTE</span>
+            <span class="text-[8vw] font-normal italic tracking-tighter uppercase mr-20">SUN-DRENCHED TEXTURES</span>
+            <span class="text-[8vw] font-normal italic tracking-tighter uppercase mr-20">MODERN GRACE</span>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="py-40 px-10 bg-noor-sand/30">
+        <div class="container mx-auto">
+            <div class="text-center mb-24 noor-reveal">
+                <h2 class="text-5xl md:text-7xl font-normal text-noor-text uppercase tracking-widest">LATEST <span class="italic text-noor-gold">DROP.</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+                <!-- Drop Item -->
+                <div class="noor-reveal">
+                    <div class="aspect-[3/4] mb-8 overflow-hidden rounded-t-[100px] border-b-8 border-noor-gold/20 hover:border-noor-gold transition-all">
+                        <img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Collection Item" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+                    </div>
+                    <h3 class="text-2xl font-bold text-noor-text uppercase tracking-tighter">Oasis Linen</h3>
+                    <p class="text-noor-gold text-xs font-bold uppercase tracking-widest">S/S 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="py-24 px-10 bg-noor-cream border-t border-noor-accent">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
+            <div class="max-w-sm">
+                <h3 class="text-4xl font-bold tracking-widest text-noor-text uppercase italic mb-8">Noor.</h3>
+                <p class="text-noor-text/60 font-light leading-relaxed mb-10">A space for ethereal modesty and digital grace. Designing for the modern woman who values tradition and innovation.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-noor-text hover:text-noor-gold transition-colors">Instagram</a>
+                    <a href="#" class="text-noor-text hover:text-noor-gold transition-colors">Pinterest</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-20">
+                <div>
+                    <h4 class="text-[10px] uppercase font-bold tracking-[0.3em] text-noor-gold mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-xs font-bold text-noor-text uppercase tracking-widest">
+                        <li><a href="collections.html" class="hover:text-noor-gold transition-colors">Archives</a></li>
+                        <li><a href="about.html" class="hover:text-noor-gold transition-colors">The Vision</a></li>
+                        <li><a href="contact.html" class="hover:text-noor-gold transition-colors">Connect</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto pt-20 mt-20 border-t border-noor-accent text-center text-[10px] uppercase tracking-[0.5em] text-noor-text/40">
+            &copy; 2024 NOOR MODESTE. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+
+</body>
+</html>
