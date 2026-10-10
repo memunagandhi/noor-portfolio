@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+    --noor-cream: #fdfcf8;
+    --noor-sand: #f5f1e9;
+    --noor-gold: #d4af37;
+    --noor-text: #4a4238;
+    --noor-accent: #e8e2d6;
+}
+
+body {
+    background-color: var(--noor-cream);
+    color: var(--noor-text);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-noor-gold { color: var(--noor-gold); }
+
+/* Glassmorphism */
+.noor-glass {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Soft Reveal Animation */
+.noor-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.noor-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Organic Shapes */
+.shape-mask {
+    border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    transition: border-radius 1s ease;
+}
+
+.shape-mask:hover {
+    border-radius: 40% 60% 30% 70% / 50% 40% 50% 60%;
+}
+
+/* Buttons */
+.btn-noor {
+    background-color: var(--noor-text);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+.btn-noor:hover {
+    background-color: var(--noor-gold);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--noor-cream);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--noor-accent);
+    border-radius: 10px;
+}
